@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Pythia</h1>
+        <h2 id="nom-pagina">Newsletter</h2>
+    </header>
+    <nav id="links">
+        <ul>
+            <li><a href="./index.html">Página principal</a></li>
+            <li><a href="./programacion.html">Cursos</a></li>
+            <li><a href="./faq.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Newsletter</h1>
+        <p>¡Bienvenido a la sección <span>Newsletter</span>!</p>
+        <p>Desde aquí podrás ver todas las novedades de Pythia, como nuevos cursos, avances tecnológicos y más.</p>
+        <p>¡Te invitamos a <a href="#suscripcion">suscribirte</a> para estar al día!</p> <!-- La palabra "suscribirte" debería ser un hipervínculo al formulario-->
+    </section>
+
+    <article>
+        <h2>Título del artículo 1</h2>
+        <p>Aca va el primer párrafo del artículo 1</p>
+        <p>Acá el segundo párrafo del artículo 1</p>
+        <p>Y así sucesivamente!!</p>
+    </article>
+
+    <article>
+        <h2>Título del artículo 2</h2>
+        <p>Aca va el primer párrafo del artículo 2</p>
+        <p>Acá el segundo párrafo del artículo 2</p>
+        <p>Y así sucesivamente!!</p>
+    </article>
+
+    <section id="suscripcion">
+        <h2>¡Suscribite a nuestro Newsletter!</h2>
+        <form id="form-newsletter" action="https://formspree.io/f/mdordpgk" method="post">
+            <ul>
+                <li><label for="nombre">Ingrese su nombre</label></li>
+                <input id="nombre" type="text" name="nombre">
+                <li><label for="e-mail">Ingrese su E-mail</label></li>
+                <input id="e-mail" type="email" name="correlect">
+                <li><label for="edad">Ingrese su edad</label></li>
+                <input id="edad" type="number" name="edad" step="1" min="8" max="100">
+                <li><label for="pais">¿De dónde eres?</label></li>
+                <select id="pais" name="pais">
+                    <option value="arg">Argentina</option>
+                    <option value="bol">Bolivia</option>
+                    <option value="chi">Chile</option>
+                    <option value="col">Colombia</option>
+                    <option value="ecu">Ecuador</option>
+                    <option value="esp">España</option>
+                    <option value="mex">México</option>
+                    <option value="par">Paraguay</option>
+                    <option value="per">Perú</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="vez">Venezuela</option>
+                    <option value="otr">Otro</option>
+                </select>
+
+                <li><p>¿Sobre qué te gustaría recibir novedades?</p></li>
+                <ul>
+                    <li><label for="frontend">Tecnologías Frontend</label></li>
+                    <input id="frontend" type="checkbox" name="opcion" value="Frontend">
+                    <li><label for="frontend">Tecnologías Backend</label></li>
+                    <input id="backend" type="checkbox" name="opcion" value="Backend">
+                    <li><label for="frontend">Tecnologías FullStack</label></li>
+                    <input id="fullstack" type="checkbox" name="opcion" value="Full Stack">
+                    <li></li><label for="frontend">Música</label></li>
+                    <input id="musica" type="checkbox" name="opcion" value="Música">
+                </ul>
+                <li><input type="submit" value="¡Suscribirme!"></li>
+            </ul>            
+        </form>
+    </section>
+    <footer>
+        <h3><a href="#titulo">¡Volver arriba!</a></h3>
+        <p>Pythia 2023. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
