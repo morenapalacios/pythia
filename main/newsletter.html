@@ -3,53 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style-newsletter.css"/>
+    <title>Pythia - Newsletter</title>
 </head>
 <body>
-    <header>
-        <h1 id="titulo">Pythia</h1>
-        <h2 id="nom-pagina">Newsletter</h2>
+    <header id="titulo">
+        
+        <nav> 
+           
+           
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./programacion.html">Nuestros cursos</a>
+                    <ul class="sub-menu">
+                        <li> <a href="#">HTML</a></li>
+                        <li> <a href="#">CSS</a></li>
+                        <li> <a href="#">GIT</a></li>
+                        <li> <a href="#">PYTHON</a></li>
+                        <li> <a href="#">SQL</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="./newsletter.html">Newsletter</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                
+            </ul>
+        </nav>
+
     </header>
-    <nav id="links">
-        <ul>
-            <li><a href="./index.html">Página principal</a></li>
-            <li><a href="./programacion.html">Cursos</a></li>
-            <li><a href="./faq.html">Contacto</a></li>
-        </ul>
-    </nav>
     <section>
         <h1>Newsletter</h1>
         <p>¡Bienvenido a la sección <span>Newsletter</span>!</p>
         <p>Desde aquí podrás ver todas las novedades de Pythia, como nuevos cursos, avances tecnológicos y más.</p>
         <p>¡Te invitamos a <a href="#suscripcion">suscribirte</a> para estar al día!</p> <!-- La palabra "suscribirte" debería ser un hipervínculo al formulario-->
     </section>
-
+    <hr>
     <article>
         <h2>Título del artículo 1</h2>
         <p>Aca va el primer párrafo del artículo 1</p>
         <p>Acá el segundo párrafo del artículo 1</p>
         <p>Y así sucesivamente!!</p>
     </article>
-
+    <hr>
     <article>
         <h2>Título del artículo 2</h2>
         <p>Aca va el primer párrafo del artículo 2</p>
         <p>Acá el segundo párrafo del artículo 2</p>
         <p>Y así sucesivamente!!</p>
     </article>
-
+    <hr>
     <section id="suscripcion">
         <h2>¡Suscribite a nuestro Newsletter!</h2>
         <form id="form-newsletter" action="https://formspree.io/f/mdordpgk" method="post">
             <ul>
                 <li><label for="nombre">Ingrese su nombre</label></li>
-                <input id="nombre" type="text" name="nombre">
+                <input id="nombre" type="text" name="nombre" required placeholder="Nombre y Apellido">
                 <li><label for="e-mail">Ingrese su E-mail</label></li>
-                <input id="e-mail" type="email" name="correlect">
+                <input id="e-mail" type="email" name="correlect" required placeholder="tu.email@contacto.com">
                 <li><label for="edad">Ingrese su edad</label></li>
-                <input id="edad" type="number" name="edad" step="1" min="8" max="100">
+                <input id="edad" type="number" name="edad" step="1" min="8" max="100" required placeholder="Edad">
                 <li><label for="pais">¿De dónde eres?</label></li>
-                <select id="pais" name="pais">
+                <select id="pais" name="pais" required placeholder="Argentina">
                     <option value="arg">Argentina</option>
                     <option value="bol">Bolivia</option>
                     <option value="chi">Chile</option>
