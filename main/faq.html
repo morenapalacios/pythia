@@ -3,103 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pythia - FAQ</title>
-    <link  href="../static/css/style-faq.css" rel="stylesheet" href="static/favicon.ico" rel="logo">
-</head>
+    <link rel="stylesheet" href="../static/css/style-faq.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" rel="logo">
+    <title>FAQS</title>
+</head>  
 <body>
     <header>
-        
-        <nav> 
-           
-           
-            <ul class="menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./programacion.html">Nuestros cursos</a>
+        <a href="./index.html">
+            <img src="../static/img/logo.png" id="logo">
+            <h1 id="titulo">Pythia</h1>
+        </a>
+
+        <nav id="links">
+            <ul>
+                <li><a href="./index.html">PÁGINA PRINCIPAL</a></li>
+                <li><a href="./programacion.html">NUESTROS CURSOS</a></li>
                     <ul class="sub-menu">
-                        <li> <a href="#">HTML</a></li>
-                        <li> <a href="#">CSS</a></li>
-                        <li> <a href="#">GIT</a></li>
-                        <li> <a href="#">PYTHON</a></li>
-                        <li> <a href="#">SQL</a></li>
+                     <li> <a href="#">HTML</a></li>
+                      <li> <a href="#">CSS</a></li>
+                      <li> <a href="#">GIT</a></li>
+                      <li> <a href="#">PYTHON</a></li>
+                      <li> <a href="#">SQL</a></li>
                     </ul>
-                    
-                </li>
-                <li><a href="./newsletter.html">Newsletter</a></li>
+                <li><a href="./newsletter.html">NEWSLETTER</a></li>
                 <li><a href="./faq.html">FAQ</a></li>
-                
             </ul>
         </nav>
+        
 
     </header>
-    <main>   
+    <div id="linea">
+    </div>
+
+    <main class="main">
         <section>
-            <!-- PRIMERA pregunta y respuesta -->
-            <h2>¿Por dónde empiezo?</h2>
-            <hr>
-            <a href="#VideoDeHTML">
-            Para comenzar con una buena base en programación, es importante que inicies por el curso de HTML
-            </a>
-            <br>
-            
-            <!-- SEGUNDA pregunta y respuesta -->
-            <h2>¿Todos los cursos son gratituitos?</h2>
-            <hr>
-            <p>
-                Los primeros 4 videos de cada curso son gratuitos. Si deseas adquirir los restantes ponte en contacto con nosotros, y te continuaremos guiando en tu aprendizaje
-            </p>
-            <br>
-
-            <!-- TERCERA pregunta y respuesta -->
-            <h2>¿Dónde puedo suscribirme al Newsletter?</h2>
-            <hr>
-            <a href="./newsletter.html">Haz clic aquí para suscribirte...</a>
-            <br>
-
-            <!-- CUARTA pregunta y respuesta -->
-            <h2>Lorem ipsum dolor sit.</h2>
-            <hr>
-            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis accusantium placeat deserunt labore a inventore autem corporis id praesentium!</a>
-            <br>
-          
-            <!-- QUINTA pregunta y respuesta -->
-            <h2><b>¿Cuáles son las vias de comunicación?</b></h2>
-              <p>
-                Puedes comunicarte con nosotros a través de nuestras redes sociales con el nombre PYTHIA. 
-                También ofrecemos soporte técnico, administrativo o de pagos vía correo electrónico (cursos@pythia.com) y WhatsApp. 
-                Si deseás contactarnos vía web, te invitamos a completar el siguiente formulario...
-              </p>
+            <div class="main__img">
+                <img id="imagen-faq" src="../static/img/Pythia__Faq.png" alt="usuario consulta">
+            </div>
+            <div class="main__title">
+                <h1>PREGUNTAS FRECUENTES</h1>
+            </div>
+            <div>
+                <hr>
+                <h2 class="main__question">¿Por dónde empiezo?</h2>
+                <p class="main__question__answer">
+                    En Pythia vas a tener todos los recursos para convertirte en un desarrollador full stack. Por lo tanto es importante tener habilidades en tecnologias front-end como HTML, CSS y JavaScript. Te sugerimos comenzar por ese orden y luego enfocarte en las tecnologias back-end como bases de datos, servidores y lenguajes de programación, como Python, Ruby o Node.js. Tambien es importante tener conocimientos sobre seguridad, control de versiones y gestión de proyectos.
+                </p>
+                <hr>
+                <h2 class="main__question">¿Qué es un desarrollador full stack?</h2>
+                <p class="main__question__answer">
+                    Un desarrollador full stack es un profesional de la tecnologia que tiene la capacidad de trabajar tanto en el desarrollo del lado del cliente (front-end) como en el desarrollo del lado del servidor (back-end) de una aplicación web. Esto significa que pueden crear aplicaciones web cpmpletas, desde la interfaz de usuario que los usuarios ven y utilizan hasta la lógica que se ejecuta en el servor.
+                </p>
+                <hr>
+                <h2 class="main__question">¿Cuál es la diferencia entre un desarrollador front-end y un desarrollador back-end?</h2>
+                <p class="main__question__answer">
+                    Un desarrollador front-edn se enfoca en la creación de la interfaz de usuario de una aplicación web, es decir, lo que los usarios ven y con lo que interactúan en su navegador. Un desarrollador back-end se ocupa de la lógica de la aplicación, la gestión de datos y la documentación con el servidor.    
+                </p>
+                <hr>
+                <h2 class="main__question">¿Cuánto tiempo se necesita para convertirse en n desarrollador full stack?</h2>
+                <p class="main__question__answer">
+                    El tiempo necesario puede variar según la dedicación y la experiencia previa, pero generalmente lleva varios meses de aprendizake constante. Nuestros programas de formación te ayudaran a lograrlo en pocos meses gracias a nuestra calidad, profundidad y amplitud del Contenido
+                </p>
+                <hr>
+                <h2 class="main__question">¿Dónde puedo suscribirme al Newsletter?</h2>
+                <p class="main__question__answer">
+                    Haz <a href="#newsletter">Clic aqui</a> para dirigirte al formulario de consultas, y elige la opción Nesletter    
+                </p class="main__question__answer">
+                <hr>
+                <h2 class="main__question">¿Cuáles son las vias de comunicación?</h2>
+                <p class="main__question__answer">
+                    Puedes comunicarte con nosotros a través de nuestras redes sociales con el nombre PYTHIA. También ofrecemos soporte técnico, administrativo o de pagos vía correo electrónico (cursos@pythia.com) y WhatsApp. Si deseás contactarnos vía web, te invitamos a completar el siguiente formulario...
+                </p>    
+        </div>
         </section>
-      
-        <section><!-- Formulario de contacto -->
-        <fieldset>
-        <legend>Formulario de contacto</legend>
-            <form id="form-faq" action="https://formspree.io/f/mdordpgk" method="post">
-                <label for="nombre">Nombre y apellido:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido">
-                <br>
-                <label for="mail">Mail:</label>
-                <input type="email" id="email" name="email" required placeholder="nombreyapellido@email.com">
-                <br>
-                <label for="motivo">Motivo de la consulta:</label>
-                <input type="text" id="motivo" name="motivo" required placeholder="Motivo de la consulta">
-                <br>
-                <label for="consulta">Consulta:</label>
-                <textarea id="consulta" name="consulta" rows="5" required placeholder="Escriba su consulta aquí..."></textarea>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
-        </fieldset>
-        </section>
+        <section class="section__form">
+                <form action="/enviar" method="post" class="legend">
+                    <fieldset id="newsletter">
+                        <legend>Dejanos tu consulta...</legend>
+                            <label for="nombre">Nombre y apellido:</lab1el>
+                            <input type="text" id="nombre" name="nombre" required class="section__form__input"><br>
+                            <label for="mail">Mail:</label>
+                            <input type="email" id="email" name="email" required class="section__form__input"><br>
+                            <label for="motivo" required class="section__form__input">Motivo de la consulta:</label><br>
+                            <select name="motivo" id="motivo"><br>
+                                <option disabled selected="">Seleccione una opción</option>
+                                <option value="2">Contenido</option>
+                                <option value="3">Tutorias</option>
+                                <option value="4">Temario orientador</option>
+                                <option value="5">Newsletter</option>
+                                <option value="6">Otro</option>
+                            </select><br><br>
+                            <textarea id="consulta" name="consulta" rows="5" required placeholder="Escriba su consulta aquí..." class="section__form__input"></textarea><br><br>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                </fieldset>
+                </form>
+            </section>
     </main>
-    <footer>
-        <!-- Pie de página basico -->
-        <ul>
-            <li><a href="./index.html">Página principal</a></li>
-            <li><a href="./newsletter.html">Newsletter</a></li>
-            <li><a href="./faq.html">Contacto</a></li>
-            <li><a href="./programacion.html">Nuestros cursos</a></li>
-        </ul>
-        <p>Programate a ti mismo</p>
-    </footer>
+<footer class="footer">
+    
+    <ul class="fotter__ul">
+        <li class="footer__ul__li"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/youtube.png" alt="youtube"/></li>
+        <li class="footer__ul__li"><img width="50" height="50" src="https://img.icons8.com/ios/50/meta.png" alt="meta"/></li>
+        <li class="footer__ul__li"><img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/></li>
+        <li class="footer__ul__li"><img width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx--v2"/></li>
+    </ul>
+</footer>
 </body>
 </html>

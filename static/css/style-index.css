@@ -22,7 +22,6 @@ footer{
 }
 
 
-
 main h2{
     text-align: center;
     padding-top:10px;
@@ -37,7 +36,9 @@ main article p {
     display: inline;
 }
 
-
+.galeria > .card > .cuerpo-card > h3 {
+    text-align: center;
+}
 
 .texto1 {
     background-image: url(../img/1.jpeg);
@@ -55,7 +56,6 @@ main article p {
     row-gap:2px;
     margin: 10px;
 }
-
 
 .texto2 {
     background-image: url(../img/2.jpeg);
@@ -89,10 +89,17 @@ main article p {
     margin: 10px;
 }
 
+.parrafo {
+    visibility: visible;
+}
+
+.titulo-index {
+    color: white;
+}
+
 .menu > li{
     position: relative right;
     display: inline-block;
-
 }
 
 .menu > li > a {
@@ -101,7 +108,6 @@ main article p {
     display: block;
     font-size: 18px;
     padding: 10px 10px;
-
 }
 
 .menu > li:hover>.sub-menu{
@@ -123,7 +129,6 @@ main article p {
     transition: all .3s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    
 }
 
 .sub-menu > li > a{
@@ -132,8 +137,6 @@ main article p {
     display: block;
     font-size: 12px;
     padding: 10px 10px;
-    
-
 }
 
 #bienvenida {
@@ -144,44 +147,17 @@ main article p {
 
 .galeria{
   
-  display: flex;
-  overflow-y:auto;
-  padding:20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   
-}
-
-.card{
-    margin-right: 10px;
-    position: relative;
-    
-}
-
-.cuerpo-card{
-    position: absolute;
-    bottom: 0;
-    padding: 10px;  
-    background-color: rgba(96, 116, 106, 0.5); 
-    color: white;
-    
 
 }
 
-.cuerpo-card h5, .cuerpo-card p{
-    margin: 0;
 
-}
-
-.card img{
-   width: 200px;
-   object-fit: cover;
-   height: 300px;
-
-}
 
 .redes{
    justify-content: space-between;
    align-items: center;
-
 }
 
 .red{
@@ -189,9 +165,6 @@ main article p {
    width: auto;
    max-width: 30px;
    max-height: 30px;
-   
-
-
 }
 
 .icon{
@@ -262,4 +235,80 @@ header * {
 #linea {
     background-color: var(--linea-color);
     height: 8px;
+}
+
+.card {
+    margin-left: 7px;
+    margin-right: 10px;
+    position: relative;
+    
+}
+
+.cuerpo-card {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    width: 190px;
+    bottom: 4px;
+    padding: 5px;  
+    
+}
+
+.cuerpo-card h3, p {
+    visibility: hidden;
+    color: white;
+}
+
+
+.card img {
+    width: 200px;
+    object-fit: cover;
+    height: 300px;
+   
+}
+
+/* .card:hover .cuerpo-card {
+    visibility: visible;
+    opacity: 70%; 
+    transition: 0.5s ease-in; 
+} */
+
+@keyframes transicion {
+    from {background-color: white;}
+    to {background-color: darkslategrey;}
+}
+
+.cuerpo-card:hover p{
+    opacity: 80%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    visibility: visible;
+    animation: transicion 0.5s ease-in 0.3s 1 forwards forwards running;
+    transition: 0.5s ease-in-out; 
+}
+.cuerpo-card:hover{
+    opacity: 80%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    visibility: visible;
+    animation: transicion 0.5s ease-in 0.3s 1 forwards forwards running;
+    transition: 0.5s ease-in-out; 
+}
+.cuerpo-card:hover h3{
+    opacity: 80%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    visibility: visible;
+    animation: transicion 0.5s ease-in 0.3s 1 forwards forwards running;
+    transition: 0.5s ease-in-out; 
 }

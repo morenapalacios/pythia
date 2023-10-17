@@ -1,6 +1,14 @@
+#main {
+    padding-left: 20px;
+}
+
+.noticia {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 
 body{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,51 +35,65 @@ nav ul{
 }
 
 
-.menu > li{
-    position: relative;
-    display: inline-block;
+:root {
+    --header-color:#0d5d56; /*#0d5d56*/
+    --presentacion-color:#c994cd;/*#8fd5a6*/
+    --footer-color::#0d5d56;
+    --body-color:#c994cd;
+    --linea-color:#112631;
+    --contenido-color:#9aacab;
+}
+
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
+}
+
+html {
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    margin:0%;
+    padding:0%;
+    background-color: var(--body-color);
+    font-family: "Segoe UI", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+
+header {
+    background-color:var(--header-color); 
+    height: 60px;
+}
+
+#logo {
+    height:100%;
+}
+
+header * {
+    display:inline;
+    vertical-align: middle;
+    color:black;
+}
+
+
+#links {
+    position:absolute;
+    right:0px;
+    top:2%;
+}
+
+#links a {
+    margin-right:50px;
 
 }
 
-.menu > li > a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-size: 18px;
-    padding: 10px 10px;
-
-}
-
-.menu > li:hover>.sub-menu{
-    opacity: 1;
-    visibility:visible;
-}
-
-.menu li a:hover{
-    color: darkolivegreen;
-}
-
-/*submenu*/
-
-.sub-menu{
-    position: absolute;
-    background-color: rgb(41, 60, 39);
-    width:70% ;
-    border-radius: 2px;
-    transition: all .3s ease-in-out;
-    visibility: hidden;
-    opacity: 0;
-    
-}
-
-.sub-menu > li > a{
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    font-size: 12px;
-    padding: 10px 10px;
-    
-
+#linea {
+    background-color: var(--linea-color);
+    height: 8px;
 }
 
 main{
@@ -86,37 +108,39 @@ main{
   
 }
 
-.card{
-    margin-right: 10px;
-    position: relative;
-    
-}
-
-.cuerpo-card{
-    position: absolute;
-    bottom: 0;
-    padding: 10px;  
-    background-color: rgba(96, 116, 106, 0.5); 
-    color: white;
-    
-
-}
-
-.cuerpo-card h5,
-.cuerpo-card p{
-    margin: 0;
-
-}
-
-.card img{
-   width: 200px;
-   object-fit: cover;
-   height: 300px;
-   
-
-
-}
-
 .fuente {
     font-style: italic;
+}
+
+.lista  {
+    list-style: none;
+    border-style:dotted;
+    border-width: 0.1px;
+    border-color: #0d5d56;
+    padding: 3px;
+}
+
+#subs {
+    display: grid;
+    grid-template-columns: 200px 450px 300px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#lista2 {
+    display: grid;
+    grid-template-columns: 200px 120px;
+    gap: 20px;
+    place-content: center;
+}
+
+
+
+#newsletter-pic {
+    grid-column: 2/4;
+    grid-row: 1/10;
+}
+
+#boton-susc {
+    text-align: center;
 }

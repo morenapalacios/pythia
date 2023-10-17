@@ -7,38 +7,34 @@
     <title>Pythia - Newsletter</title>
 </head>
 <body>
-    <header id="titulo">
-        
-        <nav> 
-           
-           
-            <ul class="menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./programacion.html">Nuestros cursos</a>
-                    <ul class="sub-menu">
-                        <li> <a href="#">HTML</a></li>
-                        <li> <a href="#">CSS</a></li>
-                        <li> <a href="#">GIT</a></li>
-                        <li> <a href="#">PYTHON</a></li>
-                        <li> <a href="#">SQL</a></li>
-                    </ul>
-                    
-                </li>
-                <li><a href="./newsletter.html">Newsletter</a></li>
+    <header>
+        <a href="./index.html">
+            <img src="../static/img/logo.png" id="logo">
+            <h1 id="titulo">Pythia</h1>
+        </a>
+
+        <nav id="links">
+            <ul>
+                <li><a href="./index.html">PÁGINA PRINCIPAL</a></li>
+                <li><a href="./programacion.html">NUESTROS CURSOS</a></li>
+                <li><a href="./newsletter.html">NEWSLETTER</a></li>
                 <li><a href="./faq.html">FAQ</a></li>
-                
             </ul>
         </nav>
 
     </header>
-    <section>
+
+    <div id="linea">
+    </div>
+
+    <section id="main">
         <h1>Newsletter</h1>
         <p>¡Bienvenido a la sección <span>Newsletter</span>!</p>
         <p>Desde aquí podrás ver todas las novedades de Pythia, como nuevos cursos, avances tecnológicos y más.</p>
         <p>¡Te invitamos a <a href="#suscripcion">suscribirte</a> para estar al día!</p> <!-- La palabra "suscribirte" debería ser un hipervínculo al formulario-->
     </section>
-    
-    <article>
+    <hr>
+    <article class="noticia">
         <h2 class="titulo-noticia">Open AI actualiza Chat-GTP: ahora puede navegar directamente por Internet</h2>
         <h4 class="resumen">OpenAI introduce importantes actualizaciones en ChatGPT, entre las que se incluyen la navegación en directo por Internet a través de la búsqueda de Bing y capacidades multimodales mejoradas, lo que mejora significativamente su utilidad para tareas que requieren información en tiempo real.</h3>
         <p class="parrafo">   OpenAI ha actualizado recientemente ChatGPT con una serie de nuevas funciones diseñadas para ampliar sus capacidades de búsqueda, potenciar la interacción con el usuario y mejorar la precisión de la información. Los usuarios con una suscripción ChatGPT Plus o Business pueden acceder ahora a datos de Internet en directo a través de una integración con la búsqueda Bing, ampliando el conjunto de información del chatbot más allá de su base de datos previa limitada a 2021. OpenAI señala vía Twitter que esta navegación en tiempo real es especialmente útil para tareas que requieren información actualizada, como la investigación técnica.</p>
@@ -47,8 +43,8 @@
         <p class="parrafo">   El procesamiento del habla es otra mejora que favorece la accesibilidad del chatbot. El modelo de voz de OpenAI puede traducir la entrada o el contenido del cliente a través de los idiomas, una función que ya está probando Spotify para su función de traducción de voz en los podcasts.</p>
         <p class="fuente">   Vea la nota completa en <a href="https://diarioti.com/chatgpt-obtiene-acceso-a-internet-en-tiempo-real/123454">diarioti.com</a>.</p>
     </article>
-    
-    <article>
+    <hr>
+    <article class="noticia">
         <h2 class="titula-noticia">Meta estrena variantes especializadas de Code Llama para respuestas en Python y lenguaje natural</h2>
         <h4 class="resumen">Meta ha ampliado la suite Code Llama con dos modelos especializados: 'Code Llama - Python' y 'Code Llama - Instruct'. El primero está optimizado para la programación en Python, mientras que el segundo está afinado para el manejo de queries en lenguaje natural.</h3>
         <p class="parrafo">   Meta ha anunciado oficialmente el lanzamiento de Code Llama, un novedoso modelo de aprendizaje del lenguaje (LLM) de código abierto diseñado para la finalización, generación y comprobación de código. La plataforma puede ejecutarse en hardware local y busca ser una alternativa competitiva al ChatGPT de OpenAI. Code Llama es de libre acceso tanto para investigación como para aplicaciones comerciales y ofrece múltiples configuraciones adaptadas a los requisitos del usuario. Admite la generación de código en lenguajes como Python, C++, Java y Bash.</p>
@@ -58,45 +54,48 @@
         <p class="parrafo">   Meta hace hincapié en la importancia de un desarrollo responsable de la IA, afirmando que se han aplicado múltiples medidas de seguridad antes de lanzar Code Llama. La empresa también ha realizado evaluaciones de red teaming para valorar el potencial del modelo para generar código malicioso, concluyendo que Code Llama produce resultados más seguros en comparación con ChatGPT.</p>
         <p class="fuente">   Vea la nota completa en <a href="https://diarioti.com/meta-estrena-variantes-especializadas-de-code-llama-para-respuestas-en-python-y-lenguaje-natural/123342">diarioti.com</a>.</p>
     </article>
-    
+    <hr>
     <section id="suscripcion">
         <h2>¡Suscribite a nuestro Newsletter!</h2>
-        <form id="form-newsletter" action="https://formspree.io/f/mdordpgk" method="post">
-            <ul>
-                <li><label for="nombre">Ingrese su nombre</label></li>
-                <input id="nombre" type="text" name="nombre" required placeholder="Nombre y Apellido">
-                <li><label for="e-mail">Ingrese su E-mail</label></li>
-                <input id="e-mail" type="email" name="correlect" required placeholder="tu.email@contacto.com">
-                <li><label for="edad">Ingrese su edad</label></li>
-                <input id="edad" type="number" name="edad" step="1" min="8" max="100" required placeholder="Edad">
-                <li><label for="pais">¿De dónde eres?</label></li>
-                <select id="pais" name="pais" required placeholder="Argentina">
-                    <option value="arg">Argentina</option>
-                    <option value="bol">Bolivia</option>
-                    <option value="chi">Chile</option>
-                    <option value="col">Colombia</option>
-                    <option value="ecu">Ecuador</option>
-                    <option value="esp">España</option>
-                    <option value="mex">México</option>
-                    <option value="par">Paraguay</option>
-                    <option value="per">Perú</option>
-                    <option value="uru">Uruguay</option>
-                    <option value="vez">Venezuela</option>
-                    <option value="otr">Otro</option>
-                </select>
-
-                <li><p>¿Sobre qué te gustaría recibir novedades?</p></li>
-                <ul>
-                    <li><label for="frontend">Tecnologías Frontend</label></li>
-                    <input id="frontend" type="checkbox" name="opcion" value="Frontend">
-                    <li><label for="frontend">Tecnologías Backend</label></li>
-                    <input id="backend" type="checkbox" name="opcion" value="Backend">
-                    <li><label for="frontend">Tecnologías FullStack</label></li>
-                    <input id="fullstack" type="checkbox" name="opcion" value="Full Stack">
-                    <li></li><label for="frontend">Música</label></li>
-                    <input id="musica" type="checkbox" name="opcion" value="Música">
-                </ul>
-                <li><input type="submit" value="¡Suscribirme!"></li>
+        <div id="subs">
+            
+            <form id="form-newsletter" action="https://formspree.io/f/mdordpgk" method="post">
+                <ul id="lista1">
+                    <li class="lista"><label for="nombre">Ingrese su nombre:</label></li>
+                    <input id="nombre" type="text" name="nombre" required placeholder="Nombre y Apellido">
+                    <li class="lista"><label for="e-mail">Ingrese su E-mail:</label></li>
+                    <input id="e-mail" type="email" name="correlect" required placeholder="tu.email@contacto.com">
+                    <li class="lista"><label for="edad">Ingrese su edad:</label></li>
+                    <input id="edad" type="number" name="edad" step="1" min="8" max="100" required placeholder="Edad">
+                    <li class="lista"><label for="pais">¿De dónde eres?</label></li>
+                    <select  class="lista" id="pais" name="pais" required placeholder="Argentina">
+                        <option value="arg">Argentina</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="chi">Chile</option>
+                        <option value="col">Colombia</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="esp">España</option>
+                        <option value="mex">México</option>
+                        <option value="par">Paraguay</option>
+                        <option value="per">Perú</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="vez">Venezuela</option>
+                        <option value="otr">Otro</option>
+                    </select>
+                    <img src="../static/img/newsletter.png" id="newslettet-pic">
+                    <li class="lista"><p>¿Sobre qué te gustaría recibir novedades?</p></li>
+                    <ul id="lista2">
+                        <li class="lista"><label for="frontend">Tecnologías Frontend</label></li>
+                        <input id="frontend" type="checkbox" name="opcion" value="Frontend">
+                        <li class="lista"><label for="frontend">Tecnologías Backend</label></li>
+                        <input id="backend" type="checkbox" name="opcion" value="Backend">
+                        <li class="lista"><label for="frontend">Tecnologías FullStack</label></li>
+                        <input id="fullstack" type="checkbox" name="opcion" value="Full Stack">
+                        <li class="lista"><label for="frontend">Música</label></li>
+                        <input id="musica" type="checkbox" name="opcion" value="Música">
+                    </ul>
+        </div>
+                <li class="lista" id="boton-susc"><input type="submit" value="¡Suscribirme!"></li>
             </ul>            
         </form>
     </section>
