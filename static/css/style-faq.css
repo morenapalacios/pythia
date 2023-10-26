@@ -3,15 +3,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-
 #imagen-faq{
-    display: block;
+    display: inline;
     margin-top: 10px;
     align-content: end;
-    width: 400px;
-    margin-left:auto;
-    margin-right:auto;
+    width: 300px;
+    height: 250px;
 }
+
+
 
 @font-face {
     font-family: "Segoe uI";
@@ -33,11 +33,6 @@ html {
 #name {
     color: black;
 }
-
-a {
-    text-decoration: none;
-}
-
 .header__nav { 
     padding: 20px;
     border-radius: 10px;    
@@ -68,13 +63,9 @@ a {
     color: black;
     background-color: #c993cd;
     border-radius: 10px;
-    font-size: 40px;
-    text-align: center;
-}
-
-.main__title h1 { 
-    margin-top:0px;
-    padding-top:0px;
+    font-size: 30px;
+    display: inline;
+    justify-content: start;
 }
 
 .main__question {
@@ -177,11 +168,6 @@ header * {
 #links a {
     margin-right:50px;
 
-}
-
-#links a:hover {
-    margin-right:48px;
-    font-weight: bold;
 }
 
 #linea {
